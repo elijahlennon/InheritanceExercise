@@ -34,6 +34,32 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+
+            var hawk = new Bird()
+            {
+                IsPredatory = true,
+
+                IsNocturnal = false,
+
+                BuildsNest = true,
+
+                CanFly = true,
+            };
+
+            var cobra = new Reptile()
+            {
+                Appendages = false,
+
+                ShedsSkin = true,
+
+                HasForkedTongue = true,
+
+                Movement = "slithers",
+            };
+
+            hawk.Printdetails();
+            cobra.PrintDetails();
+
         }
     }
 }
